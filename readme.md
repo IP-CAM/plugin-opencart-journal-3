@@ -1,4 +1,4 @@
-# Smartsupp OpenCart plugin
+# Smartsupp plugin: OpenCart
 
 Plugin for Smartsupp live chat.
 
