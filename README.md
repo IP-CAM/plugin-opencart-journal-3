@@ -1,1 +1,0 @@
-# smartsupp-plugin-opencart
