@@ -4,8 +4,8 @@ Plugin for Smartsupp live chat.
 
 ## Versions
 
-* OpenCart 1.5
-* OpenCart 2.0
+* 1.0.0 (OpenCart 1.5)
+* 1.0.1 (OpenCart 2.0)
 
 ## Copyright
 
