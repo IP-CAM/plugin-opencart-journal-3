@@ -1,6 +1,6 @@
-# Smartsupp plugin: OpenCart
+# Smartsupp plugin - OpenCart
 
-Plugin for Smartsupp live chat.
+Download plugin files in .ZIP above.
 
 ## Copyright
 
