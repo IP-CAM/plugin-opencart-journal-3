@@ -1,6 +1,10 @@
-# Smartsupp plugin - OpenCart
+# Smartupp plugin - OpenCart 3.0 (Journal 2)
 
-Download plugin files in .ZIP above.
+Standalone version for OpenCart theme: Journal 2.
+
+## Compatibility
+
+Versions: 3.0.0.0 - 3.0.2.0
 
 ## Copyright
 
