@@ -2,10 +2,6 @@
 
 Standalone version for OpenCart theme: Journal 2.
 
-## Compatibility
-
-Versions: 3.0.0.0 - 3.0.2.0
-
 ## Copyright
 
 Copyright (c) 2018 [Smartsupp.com](https://www.smartsupp.com/)
