@@ -33,6 +33,7 @@ class ControllerExtensionModuleSmartsupp extends Controller
 				$chat->setName($this->customer->getFirstName() . ' ' . $this->customer->getLastName());
 				$chat->setEmail($this->customer->getEmail());
 			}
+            $chat->setPlatform('Opencart ' . $this->getOpenCartVersion());
 			$data['chat'] = $chat->render(true);
 			$data['customCode'] = isset($settings[self::SETTING_NAME . 'customCode']) ? $settings[self::SETTING_NAME . 'customCode'] : NULL;
 		}
