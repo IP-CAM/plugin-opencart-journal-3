@@ -38,8 +38,11 @@ class ControllerExtensionModuleSmartsupp extends Controller
 					$data = array(
 						'email' => $_POST['email'],
 						'password' => $_POST['password'],
+                        'consentTerms' => 1,
+                        'platform' => 'Opencart ' . $this->getOpenCartVersion(),
+                        'partnerKey' => self::PARNER_KEY,
 					);
-					$result = $_GET['action'] === 'register' ? $api->create($data + array('lang' => $this->language->get('code'))) : $api->login($data + array('partnerKey' => 'j29hnc919y'));
+					$result = $_GET['action'] === 'register' ? $api->create($data + array('lang' => $this->language->get('code'))) : $api->login($data);
 					if (isset($result['error'])) {
 						$message = $result['message'];
 						$formAction = $_GET['action'];
