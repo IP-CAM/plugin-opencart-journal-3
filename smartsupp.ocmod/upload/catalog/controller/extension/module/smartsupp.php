@@ -40,4 +40,8 @@ class ControllerExtensionModuleSmartsupp extends Controller
 		return $this->load->view('extension/module/smartsupp', $data);
 	}
 
+    private function getOpenCartVersion()
+    {
+        return defined('VERSION') ? VERSION : '???';
+    }
 }

@@ -10,6 +10,10 @@ require __DIR__ . '/../../../../system/library/smartsupp/vendor/autoload.php';
 
 class ControllerExtensionModuleSmartsupp extends Controller
 {
+    /**
+     * Smartsupp partner key for Opencart platform
+     */
+    const PARNER_KEY = 'j29hnc919y';
 
 	const SETTING_NAME = 'smartsupp';
 
@@ -105,6 +109,20 @@ class ControllerExtensionModuleSmartsupp extends Controller
 		$this->response->setOutput($this->load->view('extension/module/smartsupp', $data));
 	}
 
+    private function getOpenCartVersion()
+    {
+        return defined('VERSION') ? VERSION : '???';
+    }
+
+    public function install() {
+        $this->load->model('setting/setting');
+        $this->model_setting_setting->editSetting('module_smartsupp', ['module_smartsupp_status'=>1]);
+    }
+
+    public function uninstall() {
+        $this->load->model('setting/setting');
+        $this->model_setting_setting->deleteSetting('module_smartsupp_status');
+    }
 }
 
 class SmartsuppModuleExtensionTranslator
