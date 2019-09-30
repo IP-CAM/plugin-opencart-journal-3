@@ -1,14 +1,8 @@
 {
-	"name": "kurzor/opencart-smartsupp",
+	"name": "kurzor/opencart-smartsupp-journal-2",
 	"license": "proprietary",
 	"require": {
 		"smartsupp/chat-code-generator": "^1.0",
 		"smartsupp/php-partner-client": "^1.0"
-	},
-	"authors": [
-		{
-			"name": "Tomáš Blatný",
-			"email": "blatny.tomas@seznam.cz"
-		}
-	]
+	}
 }
