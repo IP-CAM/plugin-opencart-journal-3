@@ -39,7 +39,7 @@ class ControllerExtensionModuleSmartsupp extends Controller
 						'email' => $_POST['email'],
 						'password' => $_POST['password'],
                         'consentTerms' => 1,
-                        'platform' => 'Opencart ' . $this->getOpenCartVersion(),
+                        'platform' => 'Opencart Journal Theme ' . $this->getOpenCartVersion(),
                         'partnerKey' => self::PARNER_KEY,
 					);
 					$result = $_GET['action'] === 'register' ? $api->create($data) : $api->login($data);
